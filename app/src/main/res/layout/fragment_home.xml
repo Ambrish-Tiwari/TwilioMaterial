@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Home">
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:background="@color/material_blue_grey_800"
+        android:layout_height="fill_parent">
+
+
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:padding="@dimen/abc_action_bar_content_inset_material">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="phone"
+            android:ems="10"
+            android:id="@+id/mobNumber"
+            android:layout_row="0"
+            android:layout_column="0"
+            android:phoneNumber="true"
+            android:hint="Mobile Number"
+            android:theme="@style/AppTheme.Base" />
+    </GridLayout>
+        <com.tekinarslan.material.sample.FloatingActionButton
+            android:id="@+id/fabButton"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:layout_gravity="bottom|right"
+            android:layout_margin="16dp"
+            android:textSize="24sp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="25dp" />
+    </RelativeLayout>
+</FrameLayout>

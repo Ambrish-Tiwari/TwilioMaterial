@@ -1,0 +1,30 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 22
+    buildToolsVersion '22.0.1'
+
+    defaultConfig {
+        applicationId "com.tekinarslan.material.sample"
+        minSdkVersion 16
+        targetSdkVersion 22
+        versionCode 1
+        versionName "1.2"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    compile 'co.dift.ui.swipetoaction:library:1.1'
+    compile 'com.github.navasmdc:MaterialDesign:1.5@aar'
+    compile 'com.android.support:support-v4:22.2.1'
+    compile 'com.android.support:appcompat-v7:22.2.1'
+    compile files('libs/twilioclient-android.jar')
+    compile files('libs/ksoap2-android-assembly-2.4-jar-with-dependencies.jar')
+}
